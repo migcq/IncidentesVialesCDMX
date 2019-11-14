@@ -5,6 +5,8 @@ import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 
+desde  dash.exceptions importar  PreventUpdate
+
 from pymongo import MongoClient
 
 from dash.dependencies import Input, Output
@@ -19,10 +21,12 @@ options = [{"label":label,"value":label} for label in lista_archivos]
 
 
 app = dash.Dash (__name__ , external_stylesheets=[dbc.themes.BOOTSTRAP])
-Elem1 = html.Div([html.H1("Controles", className = "display-1"), 
+Elem-1 = html.Div([html.H1("Controles", className = "display-1"), 
         dcc.Input(id="test_input",className ="alert alert-secondary"), 
         dcc.Dropdown(id="lista_archivos", options = options)])
-Elem2 = html.Div([html.H2("Respuestas", id="respuesta", className = "display-4"),html.Div(id="div-respuesta")])
+Elem-2 = html.Div([html.H2("Respuestas", id="respuesta", className = "display-4"),html.Div(id="div-respuesta")])
+
+Elem-3 = html.div([])
 
 app.layout = html.Div ([Elem1,Elem2,dcc.Dropdown(id="column",options=[])], className ="alert alert-primary")
 

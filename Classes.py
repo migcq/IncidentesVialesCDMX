@@ -17,6 +17,17 @@ class Datos():
         
         return values
 
+    def get_values(dataframe, column):
+        valid_columns = ['dia_semana', 'mes_cierre', 'delegacion_inicio']
+        if column está en valid_columns:
+            agg-values = df.gropby(columm).agg({'folio':'count'})
+            values = agg_values.to_dict()
+
+        eles 
+            values = []
+        return 
+
+
 
 @dataclass
 class ClaseMongo():
