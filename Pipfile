@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+pandas = "*"
+ipython = "*"
+pymongo = "*"
+dash = "==1.6.0"
+dash-daq = "==0.2.1"
+dash-bootstrap-components = "*"
+
+[requires]
+python_version = "3.8"
